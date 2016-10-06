@@ -11,27 +11,65 @@
 
 </head>
 <body>
-		<ul id="navbar">
-			<li id="navContent"><a href ="#aboutMe">About me</a></li>
-			<li id="navContent"><a href ="#work">Work</a></li>
-			<li id="navContent"><a href="#contact">Contact</a></li>
-		</ul>
+	<div>
+		<img src="background/top_bar_green_brown_narrow.png" id="navimage">
+	</div>
+	<ul id="navbar">
+		<li id="navContent"><a href ="#aboutMe">About me</a></li>
+		<li id="navContent"><a href ="#work">Work</a></li>
+		<li id="navContent"><a href="#contact">Contact</a></li>
+	</ul>
+	
 	<section id="top">
-	<img src="crowncat.png" id="frontimage">
+		<img src="images/crowncat.png" id="frontimage">
 		<h1>Hisayo Horie</h1>
-		<p>I am a web developer based in Toronto</p>
-		
-
+		<h3>Web developer</h3>
 	</section>
 	<section id="aboutMe">
 	<h2>Hi it's me</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos, est, consequatur similique sit, eligendi laudantium harum molestiae labore excepturi qui mollitia reiciendis. Nulla explicabo recusandae distinctio unde, amet quod?</p>
+		<div id="linkedin"><a href="https://ca.linkedin.com/in/hisayohorie">connect with me on LinkedIn</a></div>
 	</section>
 	<section id="work">
 	<h2>My work</h2>
-		<p>portfolio goes here</p>
+		<ul id="portfolio">
+			<li>
+				<h3>WeRoboCare</h3>
+				<img src="images/robocare_big.png" alt="link to werobocare app"id="imac_werobocare">
+			</li>
+			<li class="description robocare">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quaerat minus sapiente, fugiat quos odio architecto esse</p>
+				<a href="werobocare.herokuapp.com" id="werobocare_link">View live</a>
+			</li>
+			<li class= "description fellowguide">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quaerat minus sapiente, fugiat quos odio architecto esse</p>
+				<a href="#" id="fellowguide_link">View live</a>
+			</li>
+			<li>
+			<h3>Fellow guide</h3>
+				<img src="images/macframe.png" alt="link to werobocare app"id="imac_fellowguide">
+			</li>
+			
+			<li>
+				<h3>Upcoming project</h3>
+				<img src="images/macframe.png" alt="link to werobocare app"id="imac_upcoming">
+			</li>
+			<li class="description">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quaerat minus sapiente, fugiat quos odio architecto esse</p>
+				<a href="#" id="werobocare_link">View live</a>
+			</li>
+		</ul>
+		<div id="github"><a href="https://github.com/hisayohorie">Check out my github</a></div>
 	<h3>Other huts</h3>
-	<a href="otherHats.html"><img src="hat_green.png" id="greenHut"></a>
+		<a href="otherHats.html">
+			<div id="cattrick">
+				<img src="images/hat_green.png" id="greenHut">
+				<!-- <div id="hiddencat"> -->
+					<img src="images/cat_in_the_hat1.svg" id="catinthehat">
+				<!-- </div> -->
+			</div>
+		</a>
+
 	</section>
 	<section id ="contact">
 		<h2>Contact</h2>
@@ -39,7 +77,9 @@
 	</section>
 
 	<footer>2016 &copy; Hisayo Horie</footer>
-
-
+	<div><img src="background/top_bar_green_brown_narrow.png" id="footerimage">
+	</div>
+<!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script> -->
+ <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
 </body>

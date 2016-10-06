@@ -1,0 +1,51 @@
+body {
+	font-family: "lato";
+	margin: 0;
+	padding: 0;
+	color: #4c4c4c;
+	width: 100%;
+}
+
+section, footer {
+	margin: 0 auto;
+	padding: 30px;
+	text-align: center;
+	max-width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#navimage, #footerimage {
+	margin: auto, 0;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+#navbar {
+	display: inline-block;
+	float: right;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 30px;
+	padding-right: 20px;
+	background-color: #00796B;
+
+}
+
+#navContent {
+	padding: 5px;
+	margin: 5px;
+	display: inline-block;
+	float: right;	
+}
+
+footer {
+	background-color: #00796B;
+}

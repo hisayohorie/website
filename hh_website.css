@@ -6,16 +6,33 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body {
-	font-family: "lato";
+	font-family: "lato", "sans-sherif";
 	margin: 0;
 	padding: 0;
 	color: #4c4c4c;
+	width: 100%;
+	
 }
 
 section, footer {
 	margin: 0 auto;
 	padding: 30px;
 	text-align: center;
+	max-width: 100%;
+}
+
+/*section {
+	width: 80%;
+}*/
+
+li {
+	list-style: none;
+}
+#navimage, #footerimage {
+	margin: auto, 0;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 a {
@@ -23,12 +40,13 @@ a {
 }
 
 #navbar {
-	list-style-type: none;
 	display: inline-block;
-	float: right;
 	width: 100%;
-	margin-bottom: 30px;
+	/*margin-top: 0;*/
+	float: right;
 	padding-right: 20px;
+	background-color: #e8ecdc;
+	margin: 0;
 
 }
 
@@ -48,13 +66,23 @@ a:hover {
 }
 
 #top {
-	background-color: #f5fffa;
+	background-color: #e8ecdc;
+	/*margin-top: 20px;*/
 }
+
+h1 {
+	font-size: 50px;
+}
+
 
 h2 {
 	text-align: center;
+	font-size: 40px;
 }
 
+h3 {
+	font-size: 25px;
+}
 
 #frontimage {
 	border-radius: 100%;
@@ -62,18 +90,100 @@ h2 {
 
 
 
-#aboutMe {
-	background-color: #E5E5E5;
-}
-
-#work {
+#aboutMe, #contact, footer {
+	background-image:url(background/old_moon.png);
 	
 }
 
-#contact {
-	background-color: #E5E5E5;
+
+
+#linkedin, #github {
+	display: inline-block;
+	padding: 5px;
+	margin: 15px;
+	border: 3px;
+	border-style: solid;
+	border-color: #00796B;
 }
 
-footer {
-	background-color: #f5fffa;
+#linkedin:hover {
+	background-color: #FF8F6B;
+}
+
+
+
+
+#work {
+	background-color: #e8ecdc;
+	
+}
+
+#work ul {
+	
+
+	
+}
+
+#work li {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 50%;
+	
+}
+
+#portfolio {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#portfolio li {
+	max-width: 50%;
+	display: inline;
+	margin: 0;
+	padding: 20px;
+}
+#imac_werobocare, #imac_upcoming {
+	float: right;
+	margin: 0 auto;
+	height: auto;
+}
+#imac_fellowguide {
+	float: lefts;
+	margin: 0 auto;
+	height: auto;
+}
+
+#portfolio a {
+	padding: 20px;
+}
+
+#portfolio .description {
+	padding-top: 100px;
+
+}
+#cattrick {
+	position: relative;
+}
+
+#greenHut {
+	z-index: +2;
+	position:relative;
+	
+}
+
+#hiddencat {
+	
+
+}
+#catinthehat{
+	height: 50px;
+	position: absolute;
+	top: 10px;
+	right: 45%;
+	z-index: +1;
+}
+
+#contact {
+	/*margin-bottom: 20px;*/
 }

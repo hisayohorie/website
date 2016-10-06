@@ -1,4 +1,14 @@
 $(function() {
+
+  //scroll animation
+  window.sr = ScrollReveal();
+  $(window).scroll(function(){
+    sr.reveal('#aboutMe');
+    sr.reveal('#portfolio');
+    sr.reveal('#contact');
+  })
+
+  //smooth scroll
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -11,4 +21,8 @@ $(function() {
       }
     }
   });
+ 
+  
 });
+
+// linked in div click event
