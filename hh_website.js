@@ -4,7 +4,9 @@ $(function() {
   window.sr = ScrollReveal();
   $(window).scroll(function(){
     sr.reveal('#aboutMe');
-    sr.reveal('#portfolio');
+    sr.reveal('.robocare');
+    sr.reveal('.fellowguide');
+    sr.reveal('.upcoming');
     sr.reveal('#contact');
   })
 
@@ -22,7 +24,13 @@ $(function() {
     }
   });
  
-  
+  //grid
+  $('.honeycombs').honeycombs({
+    combWidth: 250, margin: 10
+
+  });
+
+
 });
 
 // linked in div click event
