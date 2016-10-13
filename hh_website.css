@@ -11,19 +11,24 @@ body {
 	padding: 0;
 	color: #4c4c4c;
 	width: 100%;
-	
+	background: url(background/hogan.png);
+}
+section {
+  max-width: 86%;
+  margin: 10px auto;
+  padding: 70px;
+  text-align: center;
+
+
 }
 
-section, footer {
+footer {
 	margin: 0 auto;
-	padding: 30px;
+	padding: 40px;
 	text-align: center;
-	max-width: 100%;
+	/*max-width: 100%;*/
 }
 
-/*section {
-	width: 80%;
-}*/
 
 li {
 	list-style: none;
@@ -42,11 +47,11 @@ a {
 #navbar {
 	display: inline-block;
 	width: 100%;
-	/*margin-top: 0;*/
-	float: right;
+	margin-top: 0;
+	/*float: right;*/
 	padding-right: 20px;
 	background-color: #e8ecdc;
-	margin: 0;
+	margin: 0 auto;
 
 }
 
@@ -66,8 +71,30 @@ a:hover {
 }
 
 #top {
-	background-color: #e8ecdc;
+  background-color: rgba(0,191,165,0.8);
+	/*background-color: rgba(0,150,136, 0.7);*/
+
+  margin: 0 auto;
+  display: block;
+  height: auto;
 	/*margin-top: 20px;*/
+}
+
+.topimage {
+  display: inline-block;
+  position: relative;
+}
+
+.topimage img {
+  height: auto;
+  max-width: 100%;
+}
+
+.headline {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  font-family: 'Montserrat', 'sans-serif';
 }
 
 h1 {
@@ -90,9 +117,9 @@ h3 {
 
 
 
-#aboutMe, #contact, footer {
-	background-image:url(background/old_moon.png);
-	
+ #contact, footer {
+	/*background-image:url(background/old_moon.png);*/
+	background-color: rgba(128,203,196,0.7);
 }
 
 
@@ -114,7 +141,8 @@ h3 {
 
 
 #work {
-	background-color: #e8ecdc;
+/*	background-color: #e8ecdc;*/
+background-color: rgba(224,242,241, 0.7);
 	
 }
 
@@ -172,24 +200,12 @@ h3 {
 }
 
 /*hexagon grid*/
-body{
-  font-family: 'Open Sans', arial, sans-serif;
-  background:rgb(123, 158, 158);
 
-}
 *{
   margin:0;
   padding:0;
 }
-/*body{
-  font-family: 'Open Sans', arial, sans-serif;
-  background:rgb(123, 158, 158);
 
-}*/
-/**{
-  margin:0;
-  padding:0;
-}*/
 #categories{
   overflow:hidden;
   width:90%;
