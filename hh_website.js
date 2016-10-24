@@ -6,7 +6,7 @@ $(function() {
     sr.reveal('#aboutMe');
     sr.reveal('.robocare');
     sr.reveal('.fellowguide');
-    sr.reveal('.upcoming');
+    sr.reveal('.chronos');
     sr.reveal('#contact');
   })
 

@@ -26,6 +26,8 @@ footer {
 	margin: 0 auto;
 	padding: 40px;
 	text-align: center;
+  color: #73CBFF;
+  background-color: #0D47A1;
 	/*max-width: 100%;*/
 }
 
@@ -43,14 +45,27 @@ li {
 a {
 	text-decoration: none;
 }
+a:focus {
+    outline: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+nav {
+	width: 100%;
+	background-color: #0D47A1;
+	overflow: hidden;
+	
+}
 
 #navbar {
 	display: inline-block;
-	width: 100%;
 	margin-top: 0;
-	/*float: right;*/
+	float: right;
 	padding-right: 20px;
-	background-color: #e8ecdc;
+	/*background-color: #e8ecdc;*/
 	margin: 0 auto;
 
 }
@@ -59,15 +74,20 @@ a {
 	padding: 5px;
 	margin: 5px;
 	display: inline-block;
-	float: right;	
+	float: left;	
 }
 
-a {
-	color: #4c4c4c;
+#navContent a{
+  color: #73CBFF;
 }
 
-a:hover {
-	color: #73CBFF;
+/*a {
+	color: #F06292;
+}*/
+
+#navContent a:hover {
+	
+  color: #F06292;
 }
 
 #top {
@@ -105,40 +125,41 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 40px;
+  padding: 20px;
 }
 
 h3 {
 	font-size: 25px;
+  padding: 20px;
 }
 
 #frontimage {
 	border-radius: 100%;
 }
 
+#aboutMe {
+    color: rgba(224,242,241, 1);
+}
 
 
- #contact, footer {
+ #contact {
 	/*background-image:url(background/old_moon.png);*/
 	background-color: rgba(128,203,196,0.7);
 }
 
-
-
-#linkedin, #github {
-	display: inline-block;
-	padding: 5px;
-	margin: 15px;
-	border: 3px;
-	border-style: solid;
-	border-color: #00796B;
+#contact a {
+  font-size: 40px;
+  padding: 20px;
+  color: rgba(224,242,241, 1);
 }
 
-#linkedin:hover {
-	background-color: #FF8F6B;
+a:hover{
+  color:#F06292;
 }
 
-
-
+#contact a:hover{
+  color:#F06292;
+}
 
 #work {
 /*	background-color: #e8ecdc;*/
@@ -146,8 +167,10 @@ background-color: rgba(224,242,241, 0.7);
 	
 }
 
-#work ul {
-	
+
+#portfolio li p{
+	padding-bottom: 20px;
+}
 
 	
 }
@@ -158,6 +181,7 @@ background-color: rgba(224,242,241, 0.7);
 	max-width: 50%;
 	
 }
+
 
 #portfolio {
 	display: flex;
@@ -175,15 +199,27 @@ background-color: rgba(224,242,241, 0.7);
 	float: right;
 	margin: 0 auto;
 	height: auto;
+  max-width: 100%;
 }
 #imac_fellowguide {
-	float: lefts;
+	float: left;
 	margin: 0 auto;
 	height: auto;
+  max-width: 100%;
 }
 
-#portfolio a {
-	padding: 20px;
+.description p {
+	margin-bottom: 20px;
+}
+.description a {
+	padding: 15px;
+	border-style: solid; 
+
+}
+
+.descripton a:hover {
+	background: rgba(239, 243, 251, 1);
+	color: #F06292;
 }
 
 #portfolio .description {
@@ -198,6 +234,10 @@ background-color: rgba(224,242,241, 0.7);
   background-color: #64C7CC;
   margin: 86.60px 0;
 }
+#skills h2{
+    color: rgba(224,242,241, 1);
+}
+
 
 /*hexagon grid*/
 
@@ -246,22 +286,22 @@ background-color: rgba(224,242,241, 0.7);
   margin:0 auto;   
 }
 
-#categories div h1, #categories div p{
+#categories div h3, #categories div p{
   width:100%;
   padding:0 5%;
   background-color:#008080; background-color: rgba(0, 128, 128, 0.8);
   font-family: 'Raleway', sans-serif;
   transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
 }
-#categories li h1{
+#categories li h3{
   bottom:110%;
-  font-style:italic;
+  font-family: "Play", sans-serif;
   font-weight:normal;
   font-size:1.5em;
   padding-top:100%;
   padding-bottom:100%;
 }
-#categories li h1:after{
+#categories li h3:after{
   content:'';
   display:block;
   position:absolute;
@@ -277,10 +317,35 @@ background-color: rgba(224,242,241, 0.7);
   padding-bottom:50%;
 }
 
+#categories li #cat {
+	display: inline-block;
+	height: 50px;
+
+}
+#catbox {
+    left: -25px;
+    top: -5px;
+}
+
+#categories li #catbox:hover #cat{
+	display:none;
+}
+
+#categories li #catbox:hover #pink{
+	display:inline;
+}
+
+#categories li #pink {
+	display:none;
+	height: 50px;
+/*    left: -25px;
+    top: -5px;*/
+}
+
 
 /* HOVER EFFECT  */
 
-#categories li div:hover h1 {
+#categories li div:hover h3 {
   bottom:50%;
   padding-bottom:10%;
 }
