@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	color: #4c4c4c;
 	width: 100%;
-	background: url(background/hogan.png);
+	background: url(background/hogan2.png);
 }
 section {
   max-width: 86%;
@@ -141,7 +141,7 @@ h3 {
 }
 
 #aboutMe {
-    color: rgba(224,242,241, 1);
+    color: #4c4c4c;
 }
 
 
@@ -238,7 +238,7 @@ background-color: rgba(224,242,241, 0.7);
   margin: 86.60px 0;
 }
 #skills h2{
-    color: rgba(224,242,241, 1);
+    color: #4c4c4c;
 }
 
 
