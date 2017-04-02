@@ -8,6 +8,9 @@ $(function() {
     sr.reveal('.fellowguide');
     sr.reveal('.chronos');
     sr.reveal('#contact');
+    sr.reveal('#arted');
+    sr.reveal('#utlizeart');
+
   })
 
   //smooth scroll
@@ -23,13 +26,15 @@ $(function() {
       }
     }
   });
+
+   var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
  
-  //grid
-  $('.honeycombs').honeycombs({
-    combWidth: 250, margin: 10
-
-  });
-
+  $('#accordion').accordion({
+      collapsible: true
+    });
 
 });
 
