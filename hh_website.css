@@ -525,12 +525,12 @@ h3 {
   background-color: rgba(109,168,229,0.7)
 }
 
-#ui-id-1, #ui-id-5, #ui-id-7{
-  outline: none;
-}
 #ui-id-5:hover {
   background-color: rgba(109,168,229,0.7)
  
+}
+#ui-id-1, #ui-id-3, #ui-id-5{
+  outline: none;
 }
 
 /*art education principles*/
