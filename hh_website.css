@@ -597,6 +597,10 @@ h3 {
   #portfolio img {
     text-align: center;
   }
+  
+  #portfolio .description {
+    padding-top: 25px;
+  }
 
   #categories li h3{
     bottom:110%;
