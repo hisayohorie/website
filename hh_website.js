@@ -27,15 +27,20 @@ $(function() {
     }
   });
 
+  // humbergar menu action
+    $('.humbarger').click(function(){
+      $("nav").toggleClass('display');
+    });
+
    var icons = {
       header: "ui-icon-circle-arrow-e",
       activeHeader: "ui-icon-circle-arrow-s"
     };
- 
+
   $('#accordion').accordion({
       collapsible: true
     });
 
-});
 
-// linked in div click event
+
+});
